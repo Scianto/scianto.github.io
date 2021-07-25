@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Anto Denvo J, Security Researcher.">
+<meta name="keywords" content="Ethical Hacker, Security Researcher, sci_anto,scianto Bug Bounty,scianto security researcher,bug hunter">
+<link rel="shortcut icon" href="img/ackeron.jpg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <title>My Achievements</title>  
+        <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/*----- VARIABLES CSS Y SASS -----*/
+/*Varibles sass*/
+/*Variables css*/
+/*Colores*/
+:root {
+  --first-color: #4E1116;
+  --black-color: #000;
+  --white-color: #FFF;
+}
+
+/*Fuente y tipografia*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1rem;
+  --normal-font-size: 0.93rem;
+  --small-font-size: 0.81rem;
+}
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+
+
+@media screen and (min-width:) {
+  :root {
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 1.37rem;
+  }
+}
+
+/*----- BASE -----*/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Audiowide", sans-serif;
+  position: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: 700
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*----- LAYOUT -----*/
+.bd-grid {
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*----- PAGES -----*/
+/*Nav*/
+.nav {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--black-color)), to(var(--first-color)));
+    background-image: linear-gradient(var(--black-color), violet);
+    width: 100%;
+    height: 45%;
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+.nav__list {
+  text-align: center;
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+}
+
+.nav__link {
+  color: var(--text-color);
+}
+
+.nav__link:hover {
+  position: relative;
+}
+
+.nav__link:hover::after {
+  position: absolute;
+  content: '';
+  width: 1.5rem;
+  height: 0.1875rem;
+  left: 0.125rem;
+  top: 2.125rem;
+  background-color: violet;
+}
+
+.nav__logo {
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*Aparecer menu*/
+.show {
+  top: 3rem;
+}
+
+
+
+.home__pressent {
+  font-size: var(--small-font-size);
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+}
+
+.home__skill {
+  font-size: var(--h2-font-size);
+}
+
+.home__button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: .75rem;
+  color: var(--white-color);
+  padding: .625rem 1rem;
+  border-radius: .25rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--black-color)), to(var(--first-color)));
+  background-image: linear-gradient(to right, var(--black-color), violet);
+}
+
+.home__img {
+  right: 0;
+  bottom: 0;
+  width: 291px;
+  z-index: var(--z-normal);
+}
+
+.home__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.home__social-icon {
+  margin-bottom: 2rem;
+  font-size: 1.33rem;
+  cursor: pointer;
+}
+
+.home__social-icon:hover {
+  color: var(--first-color);
+}
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .l-main {
+    height: 100vh;
+  }
+  .nav {
+    height: 4rem;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  .nav__item {
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+  .nav__toggle, .nav__close {
+    display: none;
+  }
+  .nav__link {
+    text-transform: initial;
+  }
+  .home {
+    -ms-grid-rows: max-content 20px;
+        grid-template-rows: -webkit-max-content 20px;
+        grid-template-rows: max-content 20px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .home__information {
+    margin-top: 2rem;
+  }
+  .home__social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 8rem;
+    padding-bottom: 0;
+  }
+  .home__social-icon {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+  .home__img {
+    width: 553px;
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*ANIMATE*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-modal);
+}
+
+.first {
+  background-color: violet;
+}
+
+.second {
+  background-color: violet;
+  left: 33.3%;
+}
+
+.third {
+  background-color: violet;
+  left: 66.6%;
+}
+
+
+
+</style>    
+</head>
+<body>
+        <!-- OVERLAY -->
+        <div class="main" id="home">
+
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+      
+
+<div id="main">
+   <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+        
+    
+<div>   
+<center>  
+<h2>MY ACHIEVEMENTS 💰</h2>
+<p>Below are the Companies to recognize me as a Security Researcher and Ethical Hacker.<br>I have also shared my bounties and hall of fames.</p>
+<li>Health dept. of Australia gov. - <a href="https://www.health.gov.au/using-our-websites/vulnerability-disclosure-policy" target="_blank">Hall of fame</a></li>
+<br>
+<li>Skoda - <a href="https://www.skoda-auto.com/other/cyber-security" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Tripadvisor - <a href="https://www.bugcrowd.com/sci_anto" target="_blank">Hall of fame</a></li>
+<br>
+<li>Robotemi - <a href="https://www.robotemi.com/security-report/" target="_blank">$300 Bounty 💰</a></li>
+<br>
+<li>Mercedes Benz - <a href="https://www.mercedes-benz.com/en/whitehat/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Toshiba - <a href="https://www.global.toshiba/ww/cybersecurity/corporate/psirt_contact.html" target="_blank">Acknowledgement</a></li>
+<br>
+<li>TCL - <a href="https://www.tcl.com/in/en/security.html" target="_blank">$10 Bounty 💰</a></li>
+<br>
+<li>Snapdeal - <a href="https://www.snapdeal.com" target="_blank">₹5000 Amazon voucher 💰</a></li>
+<br>
+<li>Bookmyshow - <a href="https://www.bookmyshow.com" target="_blank">₹1000 voucher 💰</a></li>
+<br>
+<li>Upstox - <a href="https://www.upstox.com/bug-bounty/" target="_blank">₹40000 bounty 💰</a></li>
+<br>
+<li>Malabs - <a href="https://www.malabs.com/" target="_blank">$200 Amazon voucher 💰</a></li>
+<br>
+<li>Homecentre - <a href="https://www.homecentre.in" target="_blank">₹2000 voucher 💰</a></li>
+<br>
+<li>Realogy - <a href="https://hackerone.com/realogy" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Jktyre - <a href="https://www.jktyre.com" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Magisto - <a href="https://hackerone.com/scianto05" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Jfrog - <a href="https://hackerone.com/jfrog/thanks" target="_blank"> Swag 🎁</a></li>
+<br>
+<li>Byjus - <a href="https://byjus.com/reporting-issues-on-byjus-website/hall-of-fame/" target="_blank">Hall of fame</a></li>
+<br>
+<li>Realself - <a href="https://bugcrowd.com/sci_anto" target="_blank">Hall of fame and $200 bounty 💰</a></li>
+<br>
+<li>JBL - <a href="https://in.jbl.com/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Bluescape - <a href="https://www.bluescape.com/security-hall-of-fame/" target="_blank">Hall of fame</a></li>
+<br>
+<li>Julfikar.xyz - <a href="https://thejulfikar.xyz/announcement/responsible-disclosure-hall-of-fame/" target="_blank">Hall of fame</a></li>
+<br>
+<li>Officedepot - <a href="https://bugcrowd.com/sci_anto" target="_blank">Hall of fame</a></li>
+<br>
+<li>Opencontent - <a href="https://www.opencontent.it/Responsible-Disclosure-Policy#security-hall-of-fame" target="_blank">Hall of fame</a></li>
+<br>
+<li>Pageuppeople - <a href="https://www.pageuppeople.com/responsible-disclosure/" target="_blank">Hall of fame</a></li>
+<br>
+<li>Majidalfuttaim - <a href="https://bugcrowd.com/sci_anto" target="_blank">Hall of fame</a></li>
+<br>
+<li>Pentair - <a href="https://www.pentair.com/en-us/legal/responsible-disclosure.html" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Carparts - <a href="https://carparts.com" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Gomobiles - <a href="https://gomobiles.co.uk" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Flyereats - <a href="https://flyereats.in" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Keysight - <a href="https://about.keysight.com/en/quality/security/report.shtml" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Printerpoint - <a href="https://printerpoint.co.in" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Embloom - <a href="https://www.embloom.com/responsible-disclosure-policy/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Tatacommunications - <a href="https://www.tatacommunications.com" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Edusity - <a href="https://www.edusity.com" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Walkmate - <a href="https://www.walkmate.in" target="_blank">Swag 🎁</a></li>
+<br>
+<li>Thinkific - <a href="https://www.thinkific.com" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Krademy - <a href="https://www.krademy.com" target="_blank">Acknowledgement</a></li>
+<br>
+<li>OHIO University - <a href="https://www.ohio.edu" target="_blank">Acknowledgement Letter</a></li>
+<br>
+<li>Ourdailybread - <a href="https://tamil-odb.org/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Gcfglobal - <a href="https://edu.gcfglobal.org/en/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>WCUPA University - <a href="https://www.wcupa.edu/infoServices/security/default.aspx" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Anuradhaartjewellery - <a href="https://www.anuradhaartjewellery.com/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Jaycar - <a href="https://www.jaycar.com.au/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Kimovil - <a href="https://www.kimovil.com/en/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Condomerie - <a href="https://condomerie.com/nl/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Petsutra - <a href="https://www.petsutra.com/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Philosophy - <a href="https://www.philosophy.com/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Proz - <a href="https://www.proz.com/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Tawkt.to - <a href="https://www.tawk.to/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Makaan - <a href="https://www.makaan.com/bugbounty" target="_blank">₹500 bounty 💰</a></li>
+<br>
+<li>Proptiger - <a href="https://www.proptiger.com/bugbounty" target="_blank">₹1500 bounty 💰</a></li>
+<br>
+<li>Miniinthebox - <a href="https://www.miniinthebox.com/" target="_blank">$20 bounty 💰</a></li>
+<br>
+<li>Giveindia - <a href="https://www.giveindia.org/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Ingrammicro - <a href="https://usa.ingrammicro.com" target="_blank">$500 bounty 💰</a></li>
+<br>
+<li>Pay2load - <a href="https://pay2load.com" target="_blank">€50 bounty 💰</a></li>
+<br>
+<li>Socialbakers - <a href="https://www.socialbakers.com/security" target="_blank">$110 bounty 💰</a></li>
+<br>
+<li>Fogbugz - <a href="https://fogbugz.com/" target="_blank">Acknowledgement</a></li>
+<br>
+<li>Commonbond - <a href="https://www.commonbond.co/bug-crowd-vulnerability-form" target="_blank">Hall of fame</a></li>
+<br>
+<p> More to come 😊, so stay tuned !</p>
+<br>
+<center>
+</div>
+</body>
+</html>
