@@ -65,7 +65,37 @@ html {
                     <h1 class="home__title anime-text">Anto Denvo</h1>
                     
                     <div>
-                        <p class="home__button anime-text">Founder and CEO of ACKERON Securities</p>
+                                            <style>
+       
+  
+        p {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+  
+        span1::before {
+            content: "Founder and CEO of ACKERON Securities";
+            animation: animate infinite 7s;
+            padding-left: 10px;
+        }
+  
+        @keyframes animate {
+  
+            0% {
+                content: "Cyber Security Researcher";
+            }
+  
+            50% {
+                content: "Ethical Hacker";
+            }
+  
+            75% {
+                content: "Bug Hunter";
+            }
+        }
+    </style>
+                        <p class="home__button anime-text"><span1> </span1></p>
                     </div>
                 </div>
                 <div class="home__img">
